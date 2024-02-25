@@ -15,9 +15,6 @@ body {
   user-select: none;
   margin: 0;
   padding: 0;
-  background: url("/assets/bg-image-mtcl.jpg") center/cover no-repeat fixed;
-  background-size: cover;
-  background-position: center;
 }
 
 body::-webkit-scrollbar {
@@ -45,8 +42,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .main-body {
+  background: url("/assets/bg-image-mtcl.jpg") center/cover no-repeat fixed;
+  background-size: cover;
+  background-position: center;
   height: 100vh;
-  overflow: hidden;
 }
 
 .heading,
@@ -110,5 +109,6 @@ body::-webkit-scrollbar-thumb {
   }
   .btn-div {
     flex-direction: column;
+    margin-bottom: 10px;
   }
 }
