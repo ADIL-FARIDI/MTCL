@@ -74,6 +74,8 @@ body {
 }
 .time {
   grid-area: 1 / 3 / 2 / 4;
+  font-family: "Poppins-Medium";
+  color: #505050;
 }
 
 .date-con {
@@ -104,10 +106,24 @@ body {
   grid-template-rows: 1fr;
   justify-content: center;
   align-items: center;
-  font-family: "Poppins-Regular";
   padding: 20px;
+}
+
+.midnav-bar a {
+  font-family: "Poppins-Regular";
   font-size: 1.2rem;
   color: #505050;
+  border: 0px;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.CN a {
+  color: #f3f3f3;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #293990;
+  padding: 5px;
 }
 
 .mtcl-logo-img {
@@ -149,13 +165,26 @@ body {
   align-items: center;
 }
 
+/* Image Carousel */
+.slideshow-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .top,
 .btm,
 .css {
   height: 100vh;
 }
-
-/* responsive tags */
 
 @media only screen and (max-width: 712px) {
   .timezone-ind {
