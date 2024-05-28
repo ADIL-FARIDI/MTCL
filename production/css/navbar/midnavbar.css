@@ -41,13 +41,21 @@
 }
 
 .dropdown-menu {
-  display: none;
+  display: flex;
   flex-direction: column;
   position: absolute;
   top: 20vh;
   width: 100%;
   z-index: 99;
-  padding-top: 5vh;
+  opacity: 0;
+  transform: translateX(-100%);
+  background-color: #ffffff;
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Added transition */
+}
+
+.dropdown-menu.hide {
+  transform: translateX(-100%);
+  opacity: 0;
 }
 
 .dropdown-content {
@@ -56,15 +64,13 @@
   padding: 15px 20px;
 }
 
-.show {
-  display: flex;
-  opacity: 0;
-}
-
 @media screen and (max-width: 1155px) {
   .midnavbar-logo-mtcl img {
     height: 13vh;
     width: auto;
+  }
+  .midnavbar {
+    height: 15vh;
   }
 }
 
@@ -76,13 +82,29 @@
   .hamburger-menu {
     display: block;
   }
-  .show {
+
+  .dropdown-menu.show {
     display: flex;
-    opacity: 1 !important;
+    opacity: 1;
+    transform: translateX(0);
+    margin-top: -5px;
   }
 }
+
 @media screen and (max-width: 390px) {
   .midnavbar-content {
     padding: 10px;
+  }
+}
+
+/* Animation */
+@keyframes slideInMenu {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
