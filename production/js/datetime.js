@@ -15,7 +15,13 @@ function updateTime() {
 setInterval(updateTime, 1000);
 updateTime();
 ////////////////////////////////
-
+////////////////////////////////
+////////////////////////////////
+////////////////////////////////
+////////////////////////////////
+////////////////////////////////
+////////////////////////////////
+////////////////////////////////
 // datecode for topnav
 var currentDate = new Date();
 
@@ -27,36 +33,3 @@ var formattedDate = day + "/" + month + "/" + year;
 
 document.getElementById("dateDisplay").textContent = formattedDate;
 ///////////////////////////////////
-
-//image carousel
-let slideIndex = 0;
-let slideTimeout;
-
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-  slides[slideIndex - 1].style.display = "block";
-
-  clearTimeout(slideTimeout);
-
-  slideTimeout = setTimeout(showSlides, 3000);
-}
-
-////////////////////////////////////////////////////////////
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}

@@ -1,0 +1,114 @@
+<!-- <section class="midnavbar">
+        <div class="midnav-bar">
+            <div class="mtcl-logo-img">
+                <img src="/assets/MTCL-logo-BlackTagline.png" alt="MTCL Logo">
+            </div>
+            <div class="WWD">
+                <a href="">
+                    What We Do
+                </a>
+            </div>
+            <div class="prd">
+                <a href="">
+                    Products
+                </a>
+            </div>
+            <div class="DMTCL">
+                <a href="">
+                    Discover MTCL
+                </a>
+            </div>
+            <div class="CN">
+                <a href="">
+                    Contact Now
+                </a>
+            </div>
+        </div>
+    </section> -->
+
+
+    /* mid navbar css */
+.midnav-bar {
+  display: grid;
+  grid-template-columns: 3fr repeat(4, 1.5fr);
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-top: 0px;
+}
+
+.midnav-bar a {
+  font-family: "Poppins-Regular";
+  font-size: 1.2rem;
+  color: #505050;
+  border: 0px;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.CN a {
+  color: #f3f3f3;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #293990;
+  padding: 9px;
+}
+
+.mtcl-logo-img {
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mtcl-logo-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.WWD {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.prd {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.DMTCL {
+  grid-area: 1 / 4 / 2 / 5;
+}
+.CN {
+  grid-area: 1 / 5 / 2 / 6;
+}
+
+.mtcl-logo-img,
+.WWD,
+.prd,
+.DMTCL,
+.TU,
+.CN {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .midnav-bar {
+    padding: 5px;
+  }
+  .CN a {
+    padding: 3px;
+  }
+  .midnav-bar a {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 712px) {
+  .midnav-bar {
+    padding: 5px;
+    grid-template-columns: 2fr repeat(4, 2fr);
+  }
+  .midnav-bar a {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+}
