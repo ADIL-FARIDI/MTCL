@@ -207,4 +207,27 @@ body {
   .midnav-bar {
     grid-template-columns: 2fr repeat(4, 2fr);
   }
+  .mtcl-logo-img,
+  .WWD,
+  .prd,
+  .DMTCL,
+  .TU,
+  .CN {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .midnav-bar {
+    padding: 2px;
+  }
+  .midnav-bar a {
+    font-size: 0.5rem;
+  }
+  .CN a {
+    border-radius: 5px;
+    padding: 5px;
+  }
+  .top-navbar {
+    font-size: 0.7rem;
+  }
 }
