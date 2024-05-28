@@ -15,10 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       hamburgerIcon.classList.remove("fa-times");
       hamburgerIcon.classList.add("fa-bars");
-      dropdownMenu.classList.add("hide"); // Add hide class to initiate slide-out animation
+      dropdownMenu.classList.add("hide");
       setTimeout(() => {
-        dropdownMenu.classList.remove("hide"); // Remove hide class after animation completes
-      }, 500); // Adjust timing to match animation duration
+        dropdownMenu.classList.remove("hide");
+      }, 500);
     }
   }
 });
