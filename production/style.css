@@ -39,7 +39,7 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Main code */
+/* Topnavbar code */
 
 .top-navbar {
   width: 100%;
@@ -99,7 +99,6 @@ body {
 }
 
 /* mid navbar css */
-
 .midnav-bar {
   display: grid;
   grid-template-columns: 3fr repeat(4, 1.5fr);
@@ -124,7 +123,7 @@ body {
   border: 0px;
   border-radius: 5px;
   background-color: #293990;
-  padding: 5px;
+  padding: 9px;
 }
 
 .mtcl-logo-img {
@@ -184,6 +183,17 @@ body {
   height: 100vh;
 }
 
+@media only screen and (max-width: 900px) {
+  .midnav-bar {
+    padding: 5px;
+  }
+  .CN a {
+    padding: 3px;
+  }
+  .midnav-bar a {
+    font-size: 0.2rem;
+  }
+}
 @media only screen and (max-width: 712px) {
   .timezone-ind {
     grid-column-gap: 0px;
@@ -194,8 +204,7 @@ body {
   .midnav-bar {
     padding: 5px;
   }
-
-  .midnav-bar a {
-    font-size: 10px;
+  .midnav-bar {
+    grid-template-columns: 2fr repeat(4, 2fr);
   }
 }
