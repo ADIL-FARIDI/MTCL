@@ -44,14 +44,3 @@ body {
 .css {
   height: 100vh;
 }
-
-@media only screen and (max-width: 900px) {
-}
-@media only screen and (max-width: 712px) {
-  .timezone-ind {
-    grid-column-gap: 0px;
-  }
-  .date-con {
-    display: none;
-  }
-}

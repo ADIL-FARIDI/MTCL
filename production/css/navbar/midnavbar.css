@@ -1,0 +1,88 @@
+/* Midnavbar */
+.midnavbar {
+  height: 20vh;
+  overflow: hidden;
+  font-family: "Poppins-Regular";
+}
+
+.midnavbar-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  padding-top: 0;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.text-content {
+  text-decoration: none !important;
+  color: #1f1f1f;
+}
+
+.midnavbar-logo-mtcl img {
+  height: 20vh;
+  width: auto;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-menu i {
+  font-size: 1.5rem;
+  color: #1f1f1f;
+}
+
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 20vh;
+  width: 100%;
+  z-index: 99;
+  padding-top: 5vh;
+}
+
+.dropdown-content {
+  text-decoration: none !important;
+  color: #1f1f1f;
+  padding: 15px 20px;
+}
+
+.show {
+  display: flex;
+  opacity: 0;
+}
+
+@media screen and (max-width: 1155px) {
+  .midnavbar-logo-mtcl img {
+    height: 13vh;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+  .show {
+    display: flex;
+    opacity: 1 !important;
+  }
+}
+@media screen and (max-width: 390px) {
+  .midnavbar-content {
+    padding: 10px;
+  }
+}
