@@ -2,7 +2,7 @@
 .midnavbar {
   height: 20vh;
   overflow: hidden;
-  font-family: "Poppins-Regular";
+  font-family: "Gotham-book";
 }
 
 .midnavbar-content {
@@ -14,7 +14,7 @@
   padding-top: 0;
   font-size: 1.2rem;
   margin: 0 auto;
-  white-space: nowrap !important;
+  text-align: center;
 }
 
 .nav-links {
@@ -82,11 +82,14 @@
 
 @media screen and (max-width: 1155px) {
   .midnavbar-logo-mtcl img {
-    height: 13vh;
-    width: auto;
+    height: 12vh;
+    max-width: 100%;
   }
   .midnavbar {
     height: 15vh;
+  }
+  .midnavbar-content {
+    padding: 15px;
   }
 }
 
