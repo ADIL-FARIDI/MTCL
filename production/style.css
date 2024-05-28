@@ -191,7 +191,7 @@ body {
     padding: 3px;
   }
   .midnav-bar a {
-    font-size: 0.2rem;
+    font-size: 0.9rem;
   }
 }
 @media only screen and (max-width: 712px) {
@@ -203,8 +203,10 @@ body {
   }
   .midnav-bar {
     padding: 5px;
-  }
-  .midnav-bar {
     grid-template-columns: 2fr repeat(4, 2fr);
+  }
+  .midnav-bar a {
+    font-size: 0.7rem;
+    text-align: center;
   }
 }
