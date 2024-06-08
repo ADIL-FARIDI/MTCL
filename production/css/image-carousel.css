@@ -1,14 +1,42 @@
 /* Image Carousel */
-.slideshow-container {
+.carousel {
+  pointer-events: none;
+}
+
+.slideshow-container,
+.slideshow-container-mobile {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   position: relative;
   margin: auto;
   overflow: hidden;
 }
 
-.mySlides img {
+.mySlides img,
+.mySlides-mobile img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 900px) {
+  .slideshow-container {
+    display: none !important;
+  }
+  .slideshow-container-mobile {
+    height: 100vh;
+    display: block !important;
+    overflow: hidden;
+  }
+
+  .mySlides-mobile img {
+    height: 100vh;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .slideshow-container-mobile {
+    display: none !important;
+  }
 }

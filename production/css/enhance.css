@@ -1,0 +1,46 @@
+/* .enhance {
+  height: 130vh;
+  width: 100vw;
+  background-color: rgb(70, 70, 70);
+  background-image: url("/assets/images/curve.png");
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  padding: 0 auto;
+}
+
+.enhance-text {
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  padding: 0 auto;
+}
+
+.enhance-text h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.enhance-text p {
+  margin: 10px 0 0;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 900px) {
+  .enhance {
+    height: 100vh;
+    background-position: center top;
+    background-size: 200%;
+  }
+} */
