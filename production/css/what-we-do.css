@@ -33,7 +33,9 @@
 
 .infotxt {
   padding: 5%;
+  font-size: 1rem;
   text-align: justify;
+  height: auto !important;
 }
 
 .bowl1 {
@@ -59,7 +61,7 @@
   height: 50%;
 }
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1197px) {
   .plate {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -84,7 +86,8 @@
     grid-area: 3 / 2 / 4 / 3;
   }
   .window-img {
-    height: 80%;
+    height: 70%;
+    height: 50%;
   }
 }
 
@@ -95,6 +98,7 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
+    padding: 3vh;
     padding-top: 5vh !important;
   }
   .window-img {

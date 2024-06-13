@@ -1,0 +1,58 @@
+.ceonote {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ceonote-content {
+  width: 100vw;
+  height: 80vh;
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ceonote-txt-head {
+  font-size: 3rem;
+  font-family: "Gotham-Black";
+}
+
+.ceonote-txt {
+  width: 90vw;
+  color: white;
+  font-family: "Gotham-Light";
+  font-size: 1.3rem;
+  text-align: left;
+  padding: 5vh;
+}
+
+.ceonote-img img {
+  width: 20vw;
+  height: auto;
+  padding-right: 5vh;
+}
+
+@media screen and (max-width: 1197px) {
+  .ceonote-img img {
+    width: 30vw;
+    padding-right: 0vh;
+  }
+  .ceonote-txt {
+    padding: 0;
+  }
+  .ceonote-content {
+    height: auto;
+    padding: 5vh;
+    padding-bottom: 2vh;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .ceonote-img img {
+    width: 50vw;
+  }
+}
