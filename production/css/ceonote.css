@@ -7,7 +7,8 @@
 
 .ceonote-content {
   width: 100vw;
-  height: 80vh;
+  height: auto;
+  /* height: 80vh; */
   background-color: #1f1f1f;
   display: flex;
   justify-content: center;
@@ -20,7 +21,7 @@
 }
 
 .ceonote-txt {
-  width: 90vw;
+  width: 50vw;
   color: white;
   font-family: "Gotham-Light";
   font-size: 1.3rem;
@@ -29,9 +30,10 @@
 }
 
 .ceonote-img img {
-  width: 20vw;
+  width: 30vw;
   height: auto;
-  padding-right: 5vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
 @media screen and (max-width: 1197px) {
@@ -40,6 +42,7 @@
     padding-right: 0vh;
   }
   .ceonote-txt {
+    width: 80vw;
     padding: 0;
   }
   .ceonote-content {
