@@ -13,12 +13,17 @@
     <link rel="stylesheet" href="/production/css/enhance.css" />
     <link rel="stylesheet" href="/production/css/ceonote.css" />
     <link rel="stylesheet" href="/production/css/international-timimg.css" />
+    <link rel="stylesheet" href="/production/css/contactus.css" />
     <link rel="stylesheet" href="/assets/font/gotham/stylesheet.css" />
     <link rel="stylesheet" href="/assets/font/poppins/stylesheet.css" />
     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
-    <meta name="google-site-verification" content="KifF0ymLUQzwqy6rYoKgrtXZADs6UA9uq15btDGfdho" />
     <link rel="canonical" href="https://themarveltravels.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/smooth-scrollbar/dist/smooth-scrollbar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
+    <meta name="google-site-verification" content="KifF0ymLUQzwqy6rYoKgrtXZADs6UA9uq15btDGfdho" />
     <meta name="Marvel Travels - Corporate & Leisure"
         content="Embark on a New era of Corporate Travel Management Excellence." />
     <meta name="keywords" content="travel, adventure, vacation, tours, explore, destinations" />
@@ -32,7 +37,6 @@
     <meta property="og:url" content="https://www.themarveltravels.com" />
     <meta property="og:url" content="https://themarveltravels.netlify.app/" />
     <meta property="og:type" content="website" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 
 <script type="application/ld+json">
@@ -45,8 +49,8 @@
     }
   </script>
 
-<body>
-    <section class="topnavbar">
+<body data-scroll-container>
+    <section class="topnavbar" data-scroll-section>
         <div class="top-navbar">
             <div class="timezone-ind">
                 <div class="ind">India</div>
@@ -61,7 +65,7 @@
         </div>
     </section>
 
-    <section class="midnavbar">
+    <section class="midnavbar" data-scroll-section>
         <div class="midnavbar-content">
             <div class="midnavbar-logo-mtcl">
                 <img src="/assets/MTCL-logo-BlackTagline.png" alt="mtcl-logo" />
@@ -87,7 +91,7 @@
         </div>
     </section>
 
-    <section class="carousel">
+    <section class="carousel" data-scroll-section>
         <div class="slideshow-container">
             <div class="mySlides">
                 <img src="/assets/images/w.jpg" alt="Slide 1" />
@@ -118,7 +122,7 @@
         </div>
     </section>
 
-    <section class="what-we-do">
+    <section class="what-we-do" data-scroll-section>
         <div class="headingWWD">What we do</div>
         <div class="plate">
             <div class="bowl1">
@@ -162,7 +166,7 @@
         </div>
     </section>
 
-    <section class="ceonote">
+    <section class="ceonote" data-scroll-section>
         <div class="ceonote-content">
             <div class="ceonote-txt">
                 <div class="ceonote-txt-head">
@@ -189,9 +193,89 @@
         </div>
     </section>
 
-    <section class="international-timimg">
-        <div class="timing-slab"></div>
+    <section class="international-timing" data-scroll-section>
+        <div class="timing-slab">
+            <div class="city-time">
+                <div class="city">New York</div>
+                <div class="t" id="new-york-time">
+                    <span class="hours">--</span><span class="colon">:</span><span class="minutes">--</span>
+                </div>
+            </div>
+            <div class="city-time">
+                <div class="city">Singapore</div>
+                <div class="t" id="singapore-time">
+                    <span class="hours">--</span><span class="colon">:</span><span class="minutes">--</span>
+                </div>
+            </div>
+            <div class="city-time">
+                <div class="city">London</div>
+                <div class="t" id="london-time">
+                    <span class="hours">--</span><span class="colon">:</span><span class="minutes">--</span>
+                </div>
+            </div>
+            <div class="city-time">
+                <div class="city">Brisbane</div>
+                <div class="t" id="brisbane-time">
+                    <span class="hours">--</span><span class="colon">:</span><span class="minutes">--</span>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <section class="contact-section" data-scroll-section>
+        <div class="contact-content">
+            <div class="contact-text">
+                <h1>Ready to discover a new travel management company?</h1>
+                <p>Let’s talk.</p>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="first-name">First Name *</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name *</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company *</label>
+                        <input type="text" id="company" name="company" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Work Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">Mobile Number *</label>
+                        <input type="number" id="mobile" name="mobile" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="enquiry">Enquiry Type</label>
+                        <select id="enquiry" name="enquiry">
+                            <option>Please Select</option>
+                        </select>
+                    </div>
+                    <div class="form-group ">
+                        <label for="newsletter">Stay connected with the latest news and offers from MTCL Travel</label>
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">How can we help?</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                    <div class="form-group">
+                        <p>By proceeding, I agree to the website terms of use and to my personal information being
+                            handled in accordance with the privacy policy.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
 
 
     <!-- <section class="enhance">
@@ -201,12 +285,16 @@
         </div>
     </section> -->
 
-    <div class="top"></div>
+    <!-- <div class="top"></div>
     <div class="btm"></div>
-    <div class="css"></div>
+    <div class="css"></div> -->
 </body>
 <script src="/production/js/hamburger.js"></script>
 <script src="/production/js/datetime.js"></script>
+<script src="/production/js/international-timimg.js"></script>
 <script src="/production/js/image-carousel.js"></script>
+<script src="/production/js/smooth-scroll.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/smooth-scrollbar"></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
 
 </html>

@@ -1,5 +1,47 @@
+.international-timing {
+  margin-top: 10vh;
+}
+
 .timing-slab {
   background-color: #1f1f1f;
   height: 30vh;
   width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+  color: white;
+  font-family: "Gotham";
+}
+
+.city-time {
+  text-align: center;
+}
+
+.city {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.t {
+  font-size: 2rem;
+}
+
+.hours {
+  color: red;
+}
+
+.colon {
+  color: white;
+}
+
+.minutes {
+  color: blue;
+}
+
+@media screen and (max-width: 786px) {
+  .timing-slab {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }

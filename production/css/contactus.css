@@ -1,0 +1,140 @@
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 0 2rem;
+  font-family: "Gotham";
+}
+
+.contact-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.contact-text {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.contact-text h1 {
+  font-family: "Gotham-Black";
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-text p {
+  font-family: "Gotham-Book";
+
+  font-size: 1.5rem;
+}
+
+.contact-form {
+  flex: 1;
+  background-color: white;
+  color: black;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-group select {
+  background-color: white;
+  color: black;
+  font-family: "Gotham";
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.form-group select option {
+  background-color: white;
+  color: black;
+  font-family: "Gotham";
+}
+
+.form-group button:hover {
+  background-color: #444;
+}
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-text {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+input {
+  font-family: "Gotham";
+}
+textarea {
+  font-family: "Gotham";
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+}
